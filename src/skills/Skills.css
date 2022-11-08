@@ -1,0 +1,18 @@
+.skills-section {
+  display: flex;
+}
+
+.skills-section {
+  width: 50%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+.skills-side-panel {
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background-color: blue;
+}
