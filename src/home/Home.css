@@ -95,8 +95,7 @@ body {
 }
 .about-me {
   color: rgba(255, 255, 255, 1);
-  font-family: Forum;
-  font-weight: Regular;
+
   font-size: 32px;
 
   position: absolute;
@@ -107,8 +106,7 @@ body {
 
 .greeting {
   color: rgba(255, 255, 255, 1);
-  font-family: Forum;
-  font-weight: Regular;
+
   font-size: 40px;
   hyphens: auto;
   text-align: left;
