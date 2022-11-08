@@ -31,8 +31,15 @@
   position: absolute;
   color: rgba(255, 255, 255, 1);
 }
+
 .icons-row {
   width: 50%;
   height: 60%;
+  margin-left: 4%;
+  margin-top: 10%;
   display: flex;
+  flex-wrap: wrap;
+}
+.icon-tech {
+  width: 50%;
 }

@@ -1,8 +1,7 @@
 import React from "react";
 import "./Skills.css";
-import { ReactIcon } from "../icons/ReactIcon";
-import { JSIcon } from "../icons/JSIcon";
 export function Skills() {
+  const techSkills = ["javascript", "react", "python", "r", "bash", "linux"];
   return (
     <div className="skills-section">
       <div className="skills-panel">
@@ -10,8 +9,15 @@ export function Skills() {
       </div>
       <div className="skills-side-panel">
         <div className="icons-row">
-          <ReactIcon />
-          <JSIcon />
+          {techSkills.map((tech) => {
+            return (
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech}/${tech}-original.svg`}
+                alt=""
+                className="icon-tech"
+              />
+            );
+          })}
         </div>
       </div>
     </div>
