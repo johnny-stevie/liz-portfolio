@@ -5,10 +5,11 @@
 .skills-panel {
   width: 50%;
   height: 100vh;
-  /* top: 0; */
-  /* left: 0; */
+  /* top: 0;
+  left: 0; */
   display: inline-block;
   background-color: black;
+  /* position: absolute; */
   /* position: absolute; */
 }
 .skills-side-panel {
@@ -22,13 +23,18 @@
 }
 
 .skills-title {
-  top: 30%;
-  left: 10%;
+  /* top: 30%;
+  left: 10%; */
   text-align: left;
   overflow-wrap: break-word;
   hyphens: auto;
   font-size: 2.5rem;
-  position: absolute;
+  /* position: absolute; */
+  left: 30%;
+  top: 40%;
+  /* position: static; */
+  position: relative;
+
   color: rgba(255, 255, 255, 1);
 }
 

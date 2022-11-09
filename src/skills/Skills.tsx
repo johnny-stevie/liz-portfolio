@@ -5,13 +5,14 @@ export function Skills() {
   return (
     <div className="skills-section">
       <div className="skills-panel">
-        <span className="skills-title">My Skills</span>
+        <span className="skills-title">Skills</span>
       </div>
       <div className="skills-side-panel">
         <div className="icons-row">
-          {techSkills.map((tech) => {
+          {techSkills.map((tech, i) => {
             return (
               <img
+                key={i}
                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech}/${tech}-original.svg`}
                 alt=""
                 className="icon-tech"
