@@ -7,8 +7,7 @@ export default function AchievementCard({cardInfo, isDark}) {
       console.log(`URL for ${name} not found`);
       return;
     }
-    var win = window.open(url, "_blank");
-    win.focus();
+    window.open(url, "_blank").focus();
   }
 
   return (
@@ -36,7 +35,9 @@ export default function AchievementCard({cardInfo, isDark}) {
               className={
                 isDark ? "dark-mode certificate-tag" : "certificate-tag"
               }
-              onClick={() => openUrlInNewTab(v.url, v.name)}
+              onClick={() => {
+                window.open(v.url, "_blank").focus();
+              }}
             >
               {v.name}
             </span>
